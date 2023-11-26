@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { server } from "../App";
 import NoteForm from "./NoteForm";
@@ -13,11 +14,11 @@ export default function Edit() {
 
   const navigate = useNavigate();
 
-  const handleSave = async ({ title, text }) => {
+  const handleSave = useCallback( async ({ title, text }) => {
     await server.editNote(note.id, { ...note, title: title.trim(), text });
 
     navigate(`/notes/${authorId}/${note.id}`);
-  };
+  },[]);
 
   return (
     <NoteForm

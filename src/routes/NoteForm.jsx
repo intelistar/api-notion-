@@ -1,7 +1,8 @@
+import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function NoteForm({ onSave, name, initial }) {
+function NoteForm({ onSave, name, initial }) {
   const [title, setTitle] = useState(initial.title);
   const [text, setText] = useState(initial.text);
   const [error, setError] = useState(null);
@@ -55,3 +56,5 @@ export default function NoteForm({ onSave, name, initial }) {
     </div>
   );
 }
+
+export default React.memo(NoteForm);
