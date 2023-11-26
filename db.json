@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1700581857419,
+      "email": "a@mail.ru",
+      "password": "11997979Nk",
+      "date": "21.11.2023, 18:50:57"
+    },
+    {
+      "id": 1700999434678,
+      "email": "admin@mail.ru",
+      "password": "123123Zxc",
+      "date": "26.11.2023, 14:50:34"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1700774318404,
+      "authorId": "1700672075630",
+      "title": "222",
+      "text": "111",
+      "createdAt": 1700774318404
+    },
+    {
+      "id": 1700999448615,
+      "authorId": "1700999434678",
+      "title": "1 Note",
+      "text": "wemkdskdmkdmd",
+      "createdAt": 1700999448615
+    }
+  ]
+}
